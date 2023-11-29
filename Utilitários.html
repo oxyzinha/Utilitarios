@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <title>Document</title>
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                color: rgb(0, 0, 0);
+                font-family: 'Sofia', sans-serif;
+                text-align: left;
+                margin-left: 30px;
+                margin-right: 100px;
+            }
+    
+            body.dark-mode {
+                background-color: #1e1e1e;
+                color: white;
+            }
+    
+            h1 {
+                font-size: 36px;
+            }
+    
+            h2 {
+                font-size: 24px;
+            }
+    
+            p {
+                font-size: 18px;
+            }
+    
+            img {
+                max-width: 100%;
+                height: auto;
+                display: block;
+                margin: 0 auto;
+            }
+    
+            iframe {
+                display: block;
+                margin: 0 auto;
+            }
+    
+            .access-type {
+                font-weight: bold;
+            }
+    
+            .reference {
+                font-size: 14px;
+                text-align: center;
+            }
+    
+            .center {
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <button id="dark-mode-toggle" class="dark-mode-button">
+            <i class="far fa-lightbulb"></i> Dark Mode
+        </button>
+        <h1 title="font-effect-emboss">O acesso a bases de dados e servidores:</h1>
+
+    <h2 id="sub-title">O que é uma Base de dados?</h2>
+    <p>Uma base de dados é uma coleção de dados organizados de forma lógica para que possam ser facilmente consultados
+        e manipulados. Os dados são armazenados em tabelas, que são compostas por linhas e colunas. Cada linha
+        representa um registro, que é uma coleção de dados relacionados sobre um único assunto. Cada coluna representa
+        um campo, que é um tipo de dado específico, como texto, número ou data.</p><br>
+
+    <img src="https://pplware.sapo.pt/wp-content/uploads/2019/10/base-de-dados.jpg" alt="" width="500" height="250">
+
+    <h2 id="sub-title-servers">O que são servidores?</h2>
+    <p>Um servidor é um computador que fornece recursos para outros computadores em uma rede. Os servidores podem ser
+        usados para armazenar arquivos, executar aplicativos e fornecer acesso a bases de dados.</p>
+
+    <img src="https://conceitosdomundo.pt/wp-content/uploads/2021/10/servidor-web.jpg" alt="" width="500" height="250">
+
+    <h2 id="sub-title-access">Acesso a bases de dados e servidores:</h2>
+    <p>O acesso a bases de dados e servidores pode ser feito de várias maneiras. Uma maneira comum é usar uma
+        linguagem de consulta estruturada (SQL). SQL é uma linguagem de programação que permite aos usuários inserir,
+        consultar, atualizar e excluir dados de uma base de dados.</p>
+
+    <h2 id="sub-title-types">Quais são os principais tipos de acesso a base de dados e servidores?</h2>
+    <p><span class="access-type">Acesso local:</span> ocorre quando o aplicativo que está acessando a base de dados ou
+        o servidor está localizado no mesmo computador que a base de dados ou o servidor.</p>
+
+    <img src="https://sistemasca.blob.core.windows.net/arquivos/ajuda/144-2213.jpg" alt="" width="600" height="200">
+
+    <p><span class="access-type">Acesso remoto:</span> O acesso remoto ocorre quando o aplicativo que está acessando
+        a base de dados ou o servidor está localizado em um computador diferente do computador que a base de dados ou o servidor.</p>
+
+    <img src="https://zaratustraneverdie.files.wordpress.com/2014/09/acesso-remoto.jpg?w=620" alt="" width="500" height="250">
+
+    <h2 id="sub-title-purpose">Para que serve o acesso a dados e servidores?</h2>
+    <p><strong>Obter informações:</strong> Você pode usar o acesso a bases de dados e servidores para obter informações
+        sobre uma variedade de tópicos. Por exemplo, você pode usar um banco de dados de produtos para obter informações
+        sobre um produto específico ou usar um banco de dados de clientes para obter informações sobre um cliente específico.</p>
+
+    <p><strong>Executar tarefas:</strong> Você pode usar o acesso a bases de dados e servidores para executar tarefas.
+        Por exemplo, você pode usar um banco de dados de pedidos para processar um pedido ou usar um banco de dados de estoque
+        para rastrear o inventário.</p>
+
+    <p><strong>Integrar dados:</strong> Você pode usar o acesso a bases de dados e servidores para integrar dados de
+        diferentes fontes. Por exemplo, você pode usar um banco de dados de produtos para integrar dados de um banco de
+        dados de clientes para criar um relatório sobre vendas.</p><br>
+
+
+    <img src="https://www.itinsight.pt/img/uploads/1140x641_69cd0bd95ef73b939d1976ea16810b38.jpg" alt="" width="500" height="250"><br>
+
+    <iframe width="500" height="300" src="https://www.youtube.com/embed/73S4ouZYygk?si=OPa5aS9j_MrpPzGh"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe><br><br><br>
+
+    <div class="center">
+        <a class="reference" href="https://catalogo.anqep.gov.pt/">Catálogo Nacional de Qualificação <br>
+        <a class="reference" href="https://bard.google.com/chat">Referência: Google bard <br>
+        <a class="reference" href="https://chat.openai.com/auth/login">Chat GPT</a><br>Lara Lourenço<br>1ºPI
+    </div>
+    
+
+
+<script>
+    const darkModeToggle = document.getElementById("dark-mode-toggle");
+    const body = document.body;
+
+    darkModeToggle.addEventListener("click", () => {
+        body.classList.toggle("dark-mode");
+    });
+</script>
+</body>
+</html>
+  
